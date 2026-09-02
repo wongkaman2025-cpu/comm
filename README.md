@@ -1,5 +1,4 @@
-[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31751080/hong-kong-business-environment-bilingual.html)
-<!DOCTYPE html>
+[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31761058/hong-kong-business-environment-bilingual.html)
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -381,7 +380,7 @@
     <!-- 3. 工業中心 -->
     <div class="tl-item tl-industry">
       <div class="dot"></div>
-      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/%E4%B9%9D%E9%BE%8D%E9%BA%AA%E7%B2%89%E5%BB%A0_Kowloon_Flour_Mills%2C_1966.jpg/960px-%E4%B9%9D%E9%BE%8D%E9%BA%AA%E7%B2%89%E5%BB%A0_Kowloon_Flour_Mills%2C_1966.jpg" alt="香港昔日工廠" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Garment_Plant_%285345488574%29.jpg/960px-Garment_Plant_%285345488574%29.jpg" alt="香港1960年代工廠流水線" loading="lazy">
       <div class="tl-era">🏭</div>
       <h3 style="color:var(--purple)">工業中心 <small>Industrial Centre</small></h3>
       <p class="zh">● 1946年，中國發生內戰。很多中國人逃難到香港。不少中國企業家亦帶同資金、技術、設備，移居香港。<br>● 1953年，韓戰爆發，聯合國向中國內地實施禁運。香港不能再成為一轉口港，於是轉為發展製造業，製造業成為香港最普及的行業。<br>● 自1970年代至1990年代期間，香港、韓國、臺灣及新加坡被譽為「亞洲四小龍」。</p>
@@ -396,7 +395,7 @@
     <!-- 4. 國際貿易及金融中心 -->
     <div class="tl-item tl-finance">
       <div class="dot"></div>
-      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/HKIFC_and_Central_dusk_201901.jpg/960px-HKIFC_and_Central_dusk_201901.jpg" alt="香港國際金融中心" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/HK_International_Finance_Centre_200809.jpg/960px-HK_International_Finance_Centre_200809.jpg" alt="香港國際金融中心IFC" loading="lazy">
       <div class="tl-era">🌐</div>
       <h3 style="color:var(--green)">國際貿易及金融中心 <small>International Trade & Financial Centre</small></h3>
       <p class="zh">● 1978年，中國實行改革開放政策，香港製造業工廠北移至內地。<br>● 香港利用此契機，重新發展轉口貿易。這帶動了金融、銀行及其他服務業（如旅遊業）的蓬勃發展。<br>● 到了1990年代，香港已成功轉型為國際貿易及金融中心。<br>● 其後，香港更集中推動服務性行業的發展。</p>

@@ -1,5 +1,5 @@
-[Uploading hong-kong-business-environment-bilingual.html…]()
-# comm<!DOCTYPE html>
+[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31751080/hong-kong-business-environment-bilingual.html)
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -57,7 +57,7 @@
   .timeline{position:relative;padding:2rem 0}
   .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--cyan),var(--gold),var(--red),var(--green),var(--purple));transform:translateX(-50%);border-radius:3px;opacity:.4}
 
-  .tl-item{position:relative;width:45%;padding:1.8rem;border-radius:18px;margin-bottom:2rem;transition:transform .3s,box-shadow .3s;opacity:0;transform:translateY(30px)}
+  .tl-item{position:relative;width:45%;padding:1.8rem;border-radius:18px;margin-bottom:2rem;transition:transform .3s,box-shadow .3s;opacity:0;transform:translateY(30px);overflow:visible}
   .tl-item.visible{opacity:1;transform:translateY(0);transition:opacity .6s,transform .6s}
   .tl-item:nth-child(odd){margin-left:4%}
   .tl-item:nth-child(even){margin-left:51%}
@@ -78,8 +78,10 @@
   .tl-knowledge{background:linear-gradient(135deg,#fdf8e0,#faf0c0);border:1px solid rgba(180,140,0,.2)}
   .tl-knowledge .dot{background:var(--gold);box-shadow:0 0 10px rgba(180,140,0,.3)}
 
-  .tl-img{width:100%;height:auto;max-height:250px;border-radius:12px;object-fit:contain;margin-bottom:.8rem;border:1px solid rgba(0,0,0,.08);background:#f0f0f0}
+  .tl-img{width:100%;height:auto;max-height:250px;border-radius:12px;object-fit:contain;margin-bottom:.8rem;border:1px solid rgba(0,0,0,.08);background:#f0f0f0;display:block}
   .tl-img[src=""]{display:none}
+  .tl-img-edit{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.5);border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:.9rem;transition:all .2s;z-index:10;color:#fff}
+  .tl-img-edit:hover{background:var(--gold);transform:scale(1.1)}
   .tl-example{background:rgba(0,0,0,.04);border-left:3px solid;border-radius:0 10px 10px 0;padding:.8rem 1rem;margin-top:.8rem;font-size:.88rem;line-height:1.7}
   .tl-example strong{display:block;margin-bottom:.3rem;font-size:.82rem;text-transform:uppercase;letter-spacing:1px}
   .tl-fishing .tl-example{border-color:var(--cyan);color:#555}
@@ -349,7 +351,7 @@
     <!-- 1. 漁港 -->
     <div class="tl-item tl-fishing">
       <div class="dot"></div>
-      <img class="tl-img" src="漁港.jpg" alt="香港漁港" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Sampans_in_Hong_Kong.jpg/960px-Sampans_in_Hong_Kong.jpg" alt="香港昔日漁港" loading="lazy">
       <div class="tl-era">🎣</div>
       <h3 style="color:var(--cyan)">漁港 <small>Fishing Village</small></h3>
       <p class="zh">● 香港位處珠江三角洲，原本是一個漁港。</p>
@@ -364,7 +366,7 @@
     <!-- 2. 轉口港 -->
     <div class="tl-item tl-port">
       <div class="dot"></div>
-      <img class="tl-img" src="轉口港.jpg" alt="維多利亞港 - 轉口港" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/China_unknown_artist_-_late_1850s_-_Hong_Kong_harbour_-_oil_on_canvas_IMG_9403_Museum_of_Asian_Civilisation.jpg/960px-China_unknown_artist_-_late_1850s_-_Hong_Kong_harbour_-_oil_on_canvas_IMG_9403_Museum_of_Asian_Civilisation.jpg" alt="維多利亞港 - 轉口港" loading="lazy">
       <div class="tl-era">⚓</div>
       <h3 style="color:#ffa500">轉口港 <small>Entrepot</small></h3>
       <p class="zh">● 1840年，鴉片戰爭爆發。<br>● 1841年英國接管後，在香港實行自由港政策。<br>● 自這時始，香港發展成一轉口港。</p>
@@ -379,7 +381,7 @@
     <!-- 3. 工業中心 -->
     <div class="tl-item tl-industry">
       <div class="dot"></div>
-      <img class="tl-img" src="工業中心.jpg" alt="觀塘工業區" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/%E4%B9%9D%E9%BE%8D%E9%BA%AA%E7%B2%89%E5%BB%A0_Kowloon_Flour_Mills%2C_1966.jpg/960px-%E4%B9%9D%E9%BE%8D%E9%BA%AA%E7%B2%89%E5%BB%A0_Kowloon_Flour_Mills%2C_1966.jpg" alt="香港昔日工廠" loading="lazy">
       <div class="tl-era">🏭</div>
       <h3 style="color:var(--purple)">工業中心 <small>Industrial Centre</small></h3>
       <p class="zh">● 1946年，中國發生內戰。很多中國人逃難到香港。不少中國企業家亦帶同資金、技術、設備，移居香港。<br>● 1953年，韓戰爆發，聯合國向中國內地實施禁運。香港不能再成為一轉口港，於是轉為發展製造業，製造業成為香港最普及的行業。<br>● 自1970年代至1990年代期間，香港、韓國、臺灣及新加坡被譽為「亞洲四小龍」。</p>
@@ -394,7 +396,7 @@
     <!-- 4. 國際貿易及金融中心 -->
     <div class="tl-item tl-finance">
       <div class="dot"></div>
-      <img class="tl-img" src="金融中心.jpg" alt="香港夜景 - 金融中心" loading="lazy">
+      <img class="tl-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/HKIFC_and_Central_dusk_201901.jpg/960px-HKIFC_and_Central_dusk_201901.jpg" alt="香港國際金融中心" loading="lazy">
       <div class="tl-era">🌐</div>
       <h3 style="color:var(--green)">國際貿易及金融中心 <small>International Trade & Financial Centre</small></h3>
       <p class="zh">● 1978年，中國實行改革開放政策，香港製造業工廠北移至內地。<br>● 香港利用此契機，重新發展轉口貿易。這帶動了金融、銀行及其他服務業（如旅遊業）的蓬勃發展。<br>● 到了1990年代，香港已成功轉型為國際貿易及金融中心。<br>● 其後，香港更集中推動服務性行業的發展。</p>
@@ -409,7 +411,7 @@
     <!-- 5. 知識型經濟 -->
     <div class="tl-item tl-knowledge">
       <div class="dot"></div>
-      <img class="tl-img" src="知識型經濟.jpg" alt="香港科學園 - 知識型經濟" loading="lazy">
+      <img class="tl-img" src="https://gia.info.gov.hk/general/202608/27/P2026082700427_photo_1337226.jpg" alt="全民AI普惠計劃啟動禮" loading="lazy">
       <div class="tl-era">💡</div>
       <h3 style="color:var(--gold)">知識型經濟 <small>A Knowledge-based Economy</small></h3>
       <p class="zh">● 注重運用知識、高科技、創意和設計來發展經濟。</p>
@@ -999,16 +1001,16 @@ const hlStorageKey = 'hk_biz_highlights';
 const hlToggle = document.createElement('button');
 hlToggle.className = 'hl-toggle';
 hlToggle.innerHTML = '🖊️';
-hlToggle.title = '荧光笔 Highlight Pen';
+hlToggle.title = '螢光筆 Highlight Pen';
 document.body.appendChild(hlToggle);
 
 // Create toolbar
 const toolbar = document.createElement('div');
 toolbar.className = 'hl-toolbar hidden';
 toolbar.innerHTML = `
-  <button class="hl-btn" data-color="yellow" title="黄色 Yellow">🖊️</button>
-  <button class="hl-btn" data-color="green" title="绿色 Green">🖊️</button>
-  <button class="hl-btn" data-color="blue" title="蓝色 Blue">🖊️</button>
+  <button class="hl-btn" data-color="yellow" title="黃色 Yellow">🖊️</button>
+  <button class="hl-btn" data-color="green" title="綠色 Green">🖊️</button>
+  <button class="hl-btn" data-color="blue" title="藍色 Blue">🖊️</button>
   <button class="hl-btn" data-color="pink" title="粉色 Pink">🖊️</button>
   <button class="hl-btn" data-color="orange" title="橙色 Orange">🖊️</button>
   <button class="hl-btn" data-color="eraser" title="橡皮擦 Eraser">🧹</button>
@@ -1127,7 +1129,7 @@ document.addEventListener('click', e => {
 
 // Clear all
 toolbar.querySelector('.hl-clear').addEventListener('click', () => {
-  if (!confirm('确定清除所有荧光笔标记？\nClear all highlights?')) return;
+  if (!confirm('確定清除所有螢光筆標記？\nClear all highlights?')) return;
   document.querySelectorAll('mark.hl-highlight').forEach(m => m.replaceWith(document.createTextNode(m.textContent)));
   try { localStorage.removeItem(hlStorageKey); } catch(e) {}
 });
@@ -1206,7 +1208,7 @@ function setupImgButtons() {
       btn.addEventListener('click', e => {
         e.stopPropagation();
         imgTargetPoint = pt;
-        openImgModal();
+        openImgModal('📷 插入圖片 | Insert Image');
       });
       pt.appendChild(btn);
     }
@@ -1264,12 +1266,13 @@ const imgFileInput = document.getElementById('imgFileInput');
 const imgPreview = document.getElementById('imgPreview');
 let pendingImgSrc = null;
 
-function openImgModal() {
+function openImgModal(title) {
   imgUrlInput.value = '';
   imgFileInput.value = '';
   imgPreview.innerHTML = '';
   imgPreview.classList.remove('show');
   pendingImgSrc = null;
+  imgModal.querySelector('h3').textContent = title || '📷 插入圖片 | Insert Image';
   imgModal.classList.add('show');
 }
 
@@ -1312,7 +1315,19 @@ imgFileInput.addEventListener('change', () => {
 // Confirm insert
 document.getElementById('imgModalConfirm').addEventListener('click', () => {
   const src = pendingImgSrc || imgUrlInput.value.trim();
-  if (!src || !imgTargetPoint) return;
+  if (!src) return;
+
+  // Edit tl-img mode
+  if (tlImgTarget) {
+    tlImgTarget.src = src;
+    saveTlImages();
+    tlImgTarget = null;
+    closeImgModal();
+    return;
+  }
+
+  // Insert into pillar-point mode
+  if (!imgTargetPoint) return;
   const img = imgTargetPoint.querySelector('.pp-img');
   if (img) {
     img.src = src;
@@ -1323,6 +1338,55 @@ document.getElementById('imgModalConfirm').addEventListener('click', () => {
   savePointImages();
   closeImgModal();
 });
+
+// ===== Timeline Image Edit =====
+const tlImgStorageKey = 'hk_biz_tl_images';
+let tlImgTarget = null;
+
+function setupTlImgEdit() {
+  document.querySelectorAll('.tl-img').forEach(img => {
+    // Make parent position:relative if not already
+    const parent = img.parentNode;
+    if (getComputedStyle(parent).position === 'static') {
+      parent.style.position = 'relative';
+    }
+    // Add edit button after the image
+    const btn = document.createElement('button');
+    btn.className = 'tl-img-edit';
+    btn.title = '修改圖片 Edit Image';
+    btn.textContent = '✏️';
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      tlImgTarget = img;
+      openImgModal('修改圖片 | Edit Image');
+    });
+    parent.insertBefore(btn, img.nextSibling);
+    // Show/hide on hover
+    parent.addEventListener('mouseenter', () => btn.style.display = 'flex');
+    parent.addEventListener('mouseleave', () => btn.style.display = 'none');
+  });
+}
+setupTlImgEdit();
+
+// Restore saved tl images
+function restoreTlImages() {
+  try {
+    const data = JSON.parse(localStorage.getItem(tlImgStorageKey) || '{}');
+    document.querySelectorAll('.tl-img').forEach((img, i) => {
+      if (data[i]) img.src = data[i];
+    });
+  } catch(e) {}
+}
+restoreTlImages();
+
+// Save tl images
+function saveTlImages() {
+  const data = {};
+  document.querySelectorAll('.tl-img').forEach((img, i) => {
+    if (img.src) data[i] = img.src;
+  });
+  try { localStorage.setItem(tlImgStorageKey, JSON.stringify(data)); } catch(e) {}
+}
 </script>
 
 <!-- Image Insert Modal -->

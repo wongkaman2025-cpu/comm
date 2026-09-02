@@ -77,8 +77,12 @@
   .tl-knowledge{background:linear-gradient(135deg,#fdf8e0,#faf0c0);border:1px solid rgba(180,140,0,.2)}
   .tl-knowledge .dot{background:var(--gold);box-shadow:0 0 10px rgba(180,140,0,.3)}
 
-  .tl-img{width:100%;height:auto;max-height:250px;border-radius:12px;object-fit:contain;margin-bottom:.8rem;border:1px solid rgba(0,0,0,.08);background:#f0f0f0}
+  .tl-img{width:100%;height:auto;max-height:250px;border-radius:12px;object-fit:contain;margin-bottom:.8rem;border:1px solid rgba(0,0,0,.08);background:#f0f0f0;position:relative}
   .tl-img[src=""]{display:none}
+  .tl-img-wrap{position:relative;display:inline-block;width:100%}
+  .tl-img-edit{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.5);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.9rem;opacity:0;transition:all .2s;z-index:5;color:#fff}
+  .tl-img-wrap:hover .tl-img-edit{opacity:1}
+  .tl-img-edit:hover{background:var(--gold);transform:scale(1.1)}
   .tl-example{background:rgba(0,0,0,.04);border-left:3px solid;border-radius:0 10px 10px 0;padding:.8rem 1rem;margin-top:.8rem;font-size:.88rem;line-height:1.7}
   .tl-example strong{display:block;margin-bottom:.3rem;font-size:.82rem;text-transform:uppercase;letter-spacing:1px}
   .tl-fishing .tl-example{border-color:var(--cyan);color:#555}
@@ -1205,7 +1209,7 @@ function setupImgButtons() {
       btn.addEventListener('click', e => {
         e.stopPropagation();
         imgTargetPoint = pt;
-        openImgModal();
+        openImgModal('📷 插入圖片 | Insert Image');
       });
       pt.appendChild(btn);
     }
@@ -1263,12 +1267,13 @@ const imgFileInput = document.getElementById('imgFileInput');
 const imgPreview = document.getElementById('imgPreview');
 let pendingImgSrc = null;
 
-function openImgModal() {
+function openImgModal(title) {
   imgUrlInput.value = '';
   imgFileInput.value = '';
   imgPreview.innerHTML = '';
   imgPreview.classList.remove('show');
   pendingImgSrc = null;
+  imgModal.querySelector('h3').textContent = title || '📷 插入圖片 | Insert Image';
   imgModal.classList.add('show');
 }
 
@@ -1311,7 +1316,19 @@ imgFileInput.addEventListener('change', () => {
 // Confirm insert
 document.getElementById('imgModalConfirm').addEventListener('click', () => {
   const src = pendingImgSrc || imgUrlInput.value.trim();
-  if (!src || !imgTargetPoint) return;
+  if (!src) return;
+
+  // Edit tl-img mode
+  if (tlImgTarget) {
+    tlImgTarget.src = src;
+    saveTlImages();
+    tlImgTarget = null;
+    closeImgModal();
+    return;
+  }
+
+  // Insert into pillar-point mode
+  if (!imgTargetPoint) return;
   const img = imgTargetPoint.querySelector('.pp-img');
   if (img) {
     img.src = src;
@@ -1322,6 +1339,52 @@ document.getElementById('imgModalConfirm').addEventListener('click', () => {
   savePointImages();
   closeImgModal();
 });
+
+// ===== Timeline Image Edit =====
+const tlImgStorageKey = 'hk_biz_tl_images';
+let tlImgTarget = null;
+
+function setupTlImgEdit() {
+  document.querySelectorAll('.tl-img').forEach(img => {
+    // Wrap img in container
+    const wrap = document.createElement('div');
+    wrap.className = 'tl-img-wrap';
+    img.parentNode.insertBefore(wrap, img);
+    wrap.appendChild(img);
+    // Add edit button
+    const btn = document.createElement('button');
+    btn.className = 'tl-img-edit';
+    btn.title = '修改圖片 Edit Image';
+    btn.textContent = '✏️';
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      tlImgTarget = img;
+      openImgModal('修改圖片 | Edit Image');
+    });
+    wrap.appendChild(btn);
+  });
+}
+setupTlImgEdit();
+
+// Restore saved tl images
+function restoreTlImages() {
+  try {
+    const data = JSON.parse(localStorage.getItem(tlImgStorageKey) || '{}');
+    document.querySelectorAll('.tl-img').forEach((img, i) => {
+      if (data[i]) img.src = data[i];
+    });
+  } catch(e) {}
+}
+restoreTlImages();
+
+// Save tl images
+function saveTlImages() {
+  const data = {};
+  document.querySelectorAll('.tl-img').forEach((img, i) => {
+    if (img.src) data[i] = img.src;
+  });
+  try { localStorage.setItem(tlImgStorageKey, JSON.stringify(data)); } catch(e) {}
+}
 </script>
 
 <!-- Image Insert Modal -->

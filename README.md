@@ -1,4 +1,5 @@
-[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31766289/hong-kong-business-environment-bilingual.html)
+[Uploading hong-kong-business-environment-bilingual.html…]()
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -656,7 +657,7 @@
   <!-- 四大經濟支柱 -->
   <div class="pillar-grid" style="margin-top:2rem">
     <div class="pillar" style="border-top:4px solid #d4a000">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/HKIFC_and_Central_dusk_201901.jpg/960px-HKIFC_and_Central_dusk_201901.jpg" alt="金融服務業 - 國際金融中心" loading="lazy">
+      <img class="pillar-img" src="financial.jpg" alt="金融服務業 - 國際金融中心" loading="lazy">
       <div class="p-icon">💰</div>
       <h3>金融服務業 <small>Financial Services</small></h3>
       <div class="divider"></div>
@@ -669,7 +670,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #e04848">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Symphony_of_Lights_%28Victoria_Harbour%29_201902.jpg/960px-Symphony_of_Lights_%28Victoria_Harbour%29_201902.jpg" alt="旅遊業 - 維港幻彩詠香江" loading="lazy">
+      <img class="pillar-img" src="tourism.jpg" alt="旅遊業 - 維港幻彩詠香江" loading="lazy">
       <div class="p-icon">✈️</div>
       <h3>旅遊業 <small>Tourism</small></h3>
       <div class="divider"></div>
@@ -1041,8 +1042,8 @@ function updateActiveBtn() {
   hlToggle.style.cursor = hlMode ? 'crosshair' : 'pointer';
 }
 
-// Highlight on mouseup
-document.addEventListener('mouseup', () => {
+// Highlight on mouseup / touchend (iPad)
+function doHighlight() {
   if (!hlMode) return;
   const sel = window.getSelection();
   if (!sel.rangeCount || sel.isCollapsed) return;
@@ -1093,7 +1094,9 @@ document.addEventListener('mouseup', () => {
     sel.removeAllRanges();
     saveHighlights();
   } catch(e) {}
-});
+}
+document.addEventListener('mouseup', doHighlight);
+document.addEventListener('touchend', doHighlight);
 
 // Save highlights to localStorage
 function saveHighlights() {

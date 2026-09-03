@@ -1,4 +1,4 @@
-[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31761058/hong-kong-business-environment-bilingual.html)
+[hong-kong-business-environment-bilingual.html](https://github.com/user-attachments/files/31766289/hong-kong-business-environment-bilingual.html)
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -233,10 +233,10 @@
   .quiz-section h3{font-size:1.3rem;color:#333;margin-bottom:1.5rem;text-align:center}
   .quiz-item{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1.2rem 1.5rem;margin-bottom:1rem;cursor:pointer;transition:all .3s}
   .quiz-item:hover{border-color:var(--gold);box-shadow:0 4px 15px rgba(0,0,0,.06)}
-  .quiz-item h4{font-size:.95rem;color:#333;margin-bottom:.3rem;display:flex;align-items:center;gap:.5rem}
+  .quiz-item h4{font-size:.95rem;color:#333;margin-bottom:.3rem;display:flex;flex-direction:column;gap:.2rem}
   .quiz-item h4 .q-num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#fff;font-size:.78rem;font-weight:700;flex-shrink:0}
-  .quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.8rem}
-  .quiz-opt{padding:.5rem .8rem;border-radius:8px;border:1px solid #e0e0e0;font-size:.85rem;color:#555;cursor:pointer;transition:all .2s;text-align:center}
+  .quiz-options{display:flex;flex-direction:column;gap:.5rem;margin-top:.8rem}
+  .quiz-opt{padding:.6rem .8rem;border-radius:8px;border:1px solid #e0e0e0;font-size:.85rem;color:#555;cursor:pointer;transition:all .2s;text-align:left}
   .quiz-opt:hover{border-color:var(--gold);background:rgba(212,160,0,.05)}
   .quiz-opt.selected{border-color:var(--gold);background:rgba(212,160,0,.1);color:#333;font-weight:600}
   .quiz-opt.correct{border-color:var(--green);background:rgba(46,204,113,.1);color:var(--green);font-weight:600}
@@ -435,7 +435,7 @@
       <span class="flow-arrow">→</span>
       <div class="flow-node fn-3">工業中心<br><small>Industrial Centre</small></div>
       <span class="flow-arrow">→</span>
-      <div class="flow-node fn-4">國際貿易及金融中心<br><small>Int'l Trade & Financial Centre</small></div>
+      <div class="flow-node fn-4">國際貿易及金融中心<br><small>International Trade & Financial Centre</small></div>
       <span class="flow-arrow">→</span>
       <div class="flow-node fn-5">知識型經濟<br><small>Knowledge-based Economy</small></div>
     </div>
@@ -581,7 +581,7 @@
           <div class="pp-en">Tax Policy: The HKSAR Government adopts a simple tax system and low tax rate.</div>
         </div>
         <div class="pillar-point">
-          <div class="pp-zh">💷 <strong>三大直接稅：</strong>香港只有三種直接稅 —— <strong>利得稅</strong> (Profit Tax)、<strong>薪俸稅</strong> (Salary Tax) 及<strong>物業稅</strong> (Property Tax)。</div>
+          <div class="pp-zh">💷 <strong>三大直接稅：</strong>香港只有三種直接稅 —— <strong>利得稅</strong>、<strong>薪俸稅</strong>及<strong>物業稅</strong>。</div>
           <div class="pp-en">Three Direct Taxes: There are only three types of direct taxes: Profit Tax, Salary Tax, and Property Tax.</div>
         </div>
         <div class="pillar-point">
@@ -714,7 +714,7 @@
 
   <div class="pillar-grid">
     <div class="pillar" style="border-top:4px solid #9b59b6">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hong_Kong_Arts_Centre_201901.jpg/960px-Hong_Kong_Arts_Centre_201901.jpg" alt="文化及創意產業 - 香港藝術中心" loading="lazy">
+      <img class="pillar-img" src="cultural.jpg" alt="文化及創意產業 - M+博物館" loading="lazy">
       <div class="p-icon">🎨</div>
       <h3>文化及創意產業 <small>Cultural & Creative Industries</small></h3>
       <div class="divider"></div>
@@ -727,7 +727,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #3498db">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Chinese_University_of_Hong_Kong%2C_Shaw_College_201901.jpg/960px-The_Chinese_University_of_Hong_Kong%2C_Shaw_College_201901.jpg" alt="教育產業 - 中文大學" loading="lazy">
+      <img class="pillar-img" src="education.jpg" alt="教育產業 - 中文大學" loading="lazy">
       <div class="p-icon">📚</div>
       <h3>教育產業 <small>Education Services</small></h3>
       <div class="divider"></div>
@@ -740,7 +740,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #e74c3c">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Queen_Mary_Hospital_%28Hong_Kong%29_201901.jpg/960px-Queen_Mary_Hospital_%28Hong_Kong%29_201901.jpg" alt="醫療產業 - 瑪麗醫院" loading="lazy">
+      <img class="pillar-img" src="medical.jpg" alt="醫療產業 - 養和醫院" loading="lazy">
       <div class="p-icon">🏥</div>
       <h3>醫療產業 <small>Medical Services</small></h3>
       <div class="divider"></div>
@@ -753,7 +753,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #27ae60">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kowloon_Park%2C_Hong_Kong_201901.jpg/960px-Kowloon_Park%2C_Hong_Kong_201901.jpg" alt="環保產業 - 九龍公園" loading="lazy">
+      <img class="pillar-img" src="environmental.jpg" alt="環保產業 - 綠色建築" loading="lazy">
       <div class="p-icon">🌱</div>
       <h3>環保產業 <small>Environmental Industries</small></h3>
       <div class="divider"></div>
@@ -766,7 +766,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #f39c12">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/HKSTPC_201901.jpg/960px-HKSTPC_201901.jpg" alt="檢測及認證產業 - 科學園" loading="lazy">
+      <img class="pillar-img" src="testing.jpg" alt="檢測及認證產業 - STC實驗室" loading="lazy">
       <div class="p-icon">🔬</div>
       <h3>檢測及認證產業 <small>Testing & Certification</small></h3>
       <div class="divider"></div>
@@ -779,7 +779,7 @@
     </div>
 
     <div class="pillar" style="border-top:4px solid #1abc9c">
-      <img class="pillar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Hong_Kong_Science_Park_201901.jpg/960px-Hong_Kong_Science_Park_201901.jpg" alt="創新科技活動 - 香港科學園" loading="lazy">
+      <img class="pillar-img" src="innovation.jpg" alt="創新科技活動 - 數碼港" loading="lazy">
       <div class="p-icon">💡</div>
       <h3>創新科技活動 <small>Innovation & Technology</small></h3>
       <div class="divider"></div>
@@ -825,92 +825,92 @@
   <h2 class="sec-title">小測試 <small>Quick Quiz</small></h2>
 
   <div class="quiz-section">
-    <h3>📝 測試你對香港營商環境嘅認識！</h3>
+    <h3>📝 測試你對香港營商環境嘅認識！<br><small>Test Your Knowledge of Hong Kong's Business Environment!</small></h3>
 
     <div class="quiz-item" data-answer="2">
-      <h4><span class="q-num">1</span> 香港原本是一個甚麼地方？</h4>
+      <h4><span class="q-num">1</span> <div>香港原本是一個甚麼地方？</div><div style="font-weight:400;font-size:.85rem;color:#666">What was Hong Kong originally?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 農業中心</div>
-        <div class="quiz-opt" data-idx="1">B. 工業城市</div>
-        <div class="quiz-opt" data-idx="2">C. 漁港</div>
-        <div class="quiz-opt" data-idx="3">D. 金融中心</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 農業中心</div><div style="font-size:.78rem;color:#888">Agricultural Centre</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 工業城市</div><div style="font-size:.78rem;color:#888">Industrial City</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 漁港</div><div style="font-size:.78rem;color:#888">Fishing Village</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 金融中心</div><div style="font-size:.78rem;color:#888">Financial Centre</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="1">
-      <h4><span class="q-num">2</span> 1841年英國接管後，在香港實行甚麼政策？</h4>
+      <h4><span class="q-num">2</span> <div>1841年英國接管後，在香港實行甚麼政策？</div><div style="font-weight:400;font-size:.85rem;color:#666">After the British took over in 1841, what policy was adopted in Hong Kong?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 保護關稅政策</div>
-        <div class="quiz-opt" data-idx="1">B. 自由港政策</div>
-        <div class="quiz-opt" data-idx="2">C. 禁運政策</div>
-        <div class="quiz-opt" data-idx="3">D. 工業化政策</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 保護關稅政策</div><div style="font-size:.78rem;color:#888">Protectionist Tariff Policy</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 自由港政策</div><div style="font-size:.78rem;color:#888">Free Port Policy</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 禁運政策</div><div style="font-size:.78rem;color:#888">Embargo Policy</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 工業化政策</div><div style="font-size:.78rem;color:#888">Industrialisation Policy</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="3">
-      <h4><span class="q-num">3</span> 1953年韓戰爆發後，香港轉為發展什麼行業？</h4>
+      <h4><span class="q-num">3</span> <div>1953年韓戰爆發後，香港轉為發展什麼行業？</div><div style="font-weight:400;font-size:.85rem;color:#666">After the Korean War broke out in 1953, what industry did Hong Kong develop?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 金融業</div>
-        <div class="quiz-opt" data-idx="1">B. 旅遊業</div>
-        <div class="quiz-opt" data-idx="2">C. 轉口貿易</div>
-        <div class="quiz-opt" data-idx="3">D. 製造業</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 金融業</div><div style="font-size:.78rem;color:#888">Financial Industry</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 旅遊業</div><div style="font-size:.78rem;color:#888">Tourism Industry</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 轉口貿易</div><div style="font-size:.78rem;color:#888">Entrepot Trade</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 製造業</div><div style="font-size:.78rem;color:#888">Manufacturing Industry</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="2">
-      <h4><span class="q-num">4</span> 香港、韓國、臺灣及新加坡被譽為什麼？</h4>
+      <h4><span class="q-num">4</span> <div>香港、韓國、臺灣及新加坡被譽為什麼？</div><div style="font-weight:400;font-size:.85rem;color:#666">What are Hong Kong, South Korea, Taiwan, and Singapore known as?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 亞洲四巨龍</div>
-        <div class="quiz-opt" data-idx="1">B. 亞洲四虎</div>
-        <div class="quiz-opt" data-idx="2">C. 亞洲四小龍</div>
-        <div class="quiz-opt" data-idx="3">D. 亞洲四強</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 亞洲四巨龍</div><div style="font-size:.78rem;color:#888">Four Asian Dragons</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 亞洲四虎</div><div style="font-size:.78rem;color:#888">Four Asian Tigers</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 亞洲四小龍</div><div style="font-size:.78rem;color:#888">Four Asian Little Dragons</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 亞洲四強</div><div style="font-size:.78rem;color:#888">Four Asian Powers</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="0">
-      <h4><span class="q-num">5</span> 香港有多少種直接稅？</h4>
+      <h4><span class="q-num">5</span> <div>香港有多少種直接稅？</div><div style="font-weight:400;font-size:.85rem;color:#666">How many types of direct taxes are there in Hong Kong?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 3種</div>
-        <div class="quiz-opt" data-idx="1">B. 5種</div>
-        <div class="quiz-opt" data-idx="2">C. 7種</div>
-        <div class="quiz-opt" data-idx="3">D. 10種</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 3種</div><div style="font-size:.78rem;color:#888">3 Types</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 5種</div><div style="font-size:.78rem;color:#888">5 Types</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 7種</div><div style="font-size:.78rem;color:#888">7 Types</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 10種</div><div style="font-size:.78rem;color:#888">10 Types</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="1">
-      <h4><span class="q-num">6</span> 香港大約有多少家中小型企業？</h4>
+      <h4><span class="q-num">6</span> <div>香港大約有多少家中小型企業？</div><div style="font-weight:400;font-size:.85rem;color:#666">Approximately how many SMEs are there in Hong Kong?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 約10萬家</div>
-        <div class="quiz-opt" data-idx="1">B. 約34萬家</div>
-        <div class="quiz-opt" data-idx="2">C. 約50萬家</div>
-        <div class="quiz-opt" data-idx="3">D. 約100萬家</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 約10萬家</div><div style="font-size:.78rem;color:#888">Approx. 100,000</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 約34萬家</div><div style="font-size:.78rem;color:#888">Approx. 340,000</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 約50萬家</div><div style="font-size:.78rem;color:#888">Approx. 500,000</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 約100萬家</div><div style="font-size:.78rem;color:#888">Approx. 1,000,000</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="3">
-      <h4><span class="q-num">7</span> 超過多少巴仙的勞動人口從事服務性行業？</h4>
+      <h4><span class="q-num">7</span> <div>超過多少百分比的勞動人口從事服務性行業？</div><div style="font-weight:400;font-size:.85rem;color:#666">What percentage of the working population is employed in the services industry?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 50%</div>
-        <div class="quiz-opt" data-idx="1">B. 60%</div>
-        <div class="quiz-opt" data-idx="2">C. 70%</div>
-        <div class="quiz-opt" data-idx="3">D. 80%</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 50%</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 60%</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 70%</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 80%</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
 
     <div class="quiz-item" data-answer="2">
-      <h4><span class="q-num">8</span> 1978年中國實行什麼政策，令香港工廠北移？</h4>
+      <h4><span class="q-num">8</span> <div>1978年中國實行什麼政策，令香港工廠北移？</div><div style="font-weight:400;font-size:.85rem;color:#666">What policy did China adopt in 1978 that caused Hong Kong factories to move north?</div></h4>
       <div class="quiz-options">
-        <div class="quiz-opt" data-idx="0">A. 禁運政策</div>
-        <div class="quiz-opt" data-idx="1">B. 國有化政策</div>
-        <div class="quiz-opt" data-idx="2">C. 改革開放政策</div>
-        <div class="quiz-opt" data-idx="3">D. 一帶一路政策</div>
+        <div class="quiz-opt" data-idx="0"><div>A. 禁運政策</div><div style="font-size:.78rem;color:#888">Embargo Policy</div></div>
+        <div class="quiz-opt" data-idx="1"><div>B. 國有化政策</div><div style="font-size:.78rem;color:#888">Nationalisation Policy</div></div>
+        <div class="quiz-opt" data-idx="2"><div>C. 改革開放政策</div><div style="font-size:.78rem;color:#888">Reform and Open-door Policy</div></div>
+        <div class="quiz-opt" data-idx="3"><div>D. 一帶一路政策</div><div style="font-size:.78rem;color:#888">Belt and Road Initiative</div></div>
       </div>
       <div class="quiz-feedback"></div>
     </div>
